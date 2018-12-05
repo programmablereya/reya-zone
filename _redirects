@@ -1,1 +1,9 @@
-/GenderFAQ https://docs.google.com/document/d/e/2PACX-1vRZedgDVJt_RWpYo5RH0x607enjkWFXbTBiszqzvTjYnhLIkrIDz3M57MliokVuukxXFFufAlNTQRxH/pub 302
+# Redirect Netlify domain to primary domain.
+https://reya-zone.netlify.com/* https://blog.reya.zone/:splat 301!
+
+# reya.zone redirects to shortlinks.reya.zone, so redirect again to blog.reya.zone.
+https://shortlinks.reya.zone/ https://blog.reya.zone/ 301!
+# Shortlinks on the shortlinks subdomain.
+https://shortlinks.reya.zone/GenderFAQ https://docs.google.com/document/d/e/2PACX-1vRZedgDVJt_RWpYo5RH0x607enjkWFXbTBiszqzvTjYnhLIkrIDz3M57MliokVuukxXFFufAlNTQRxH/pub 302!
+# All other URLS on the shortlinks subdomain are invalid.
+https://shortlinks.reya.zone/* /404.html 404!

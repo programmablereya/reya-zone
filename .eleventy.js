@@ -59,16 +59,23 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
+  let markdownItAnchor = require("markdown-it-anchor");
+  let markdownItTOC = require("markdown-it-table-of-contents");
   let options = {
     html: true,
     breaks: true,
     linkify: true
   };
-  let opts = {
+  let anchorOptions = {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   };
+  let TOCOptions = {
+    includeLevel: [2, 3, 4],
+  };
+
+  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, anchorOptions).use(markdownItTOC, TOCOptions));
 
   return {
     templateFormats: [

@@ -1,9 +1,9 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "url": "https://eleventy-netlify-boilerplate.netlify.com",
+  "title": "reya.zone",
+  "url": "https://blog.reya.zone/",
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "github": "https://github.com/danurbanowicz"
+    "name": "Marissa Staib",
+    "email": "contact@reya.zone",
+    "github": "https://github.com/serynth"
   }
 }

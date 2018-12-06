@@ -37,11 +37,19 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: dodgerblue;
 }
 
 a[href]:not(:hover) {
 	text-decoration: none;
+}
+
+:focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
+	color: #082567;
+}
+
+a[href].direct-link, a[href].direct-link:visited {
+	color: transparent;
 }
 
 header,
